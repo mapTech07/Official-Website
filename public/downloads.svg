@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 969 375">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #1173ba;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-3, .cls-4, .cls-6 {
+        fill-rule: evenodd;
+      }
+
+      .cls-7 {
+        letter-spacing: .01em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-9, .cls-10, .cls-11, .cls-12, .cls-13 {
+        isolation: isolate;
+      }
+
+      .cls-10, .cls-11, .cls-12 {
+        font-size: 12px;
+      }
+
+      .cls-10, .cls-13 {
+        font-family: HelveticaNeue-BoldCond, 'Helvetica Neue';
+        font-weight: 700;
+      }
+
+      .cls-14 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3, .cls-5 {
+        fill: #154b99;
+      }
+
+      .cls-15 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        font-family: Poppins-Medium, Poppins;
+        font-weight: 500;
+      }
+
+      .cls-11, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-16 {
+        fill: none;
+        stroke: #bebebe;
+        stroke-linecap: square;
+      }
+
+      .cls-6 {
+        fill: #d1d1d1;
+      }
+
+      .cls-17 {
+        mask: url(#mask);
+      }
+
+      .cls-18 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-12 {
+        fill: #4e4e4e;
+        font-family: HelveticaNeue-Roman, 'Helvetica Neue';
+      }
+
+      .cls-19 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-20 {
+        letter-spacing: 0em;
+      }
+
+      .cls-13 {
+        font-size: 14px;
+      }
+    </style>
+    <mask id="mask" x="467.03" y="34.04" width="172.76" height="139.82" maskUnits="userSpaceOnUse">
+      <g id="mask-2">
+        <polygon id="path-1" class="cls-4" points="467.03 34.04 639.79 34.04 639.79 173.86 467.03 173.86 467.03 34.04"/>
+      </g>
+    </mask>
+  </defs>
+  <rect id="Rectangle" class="cls-5" x="42" y="145" width="806" height="21"/>
+  <path id="Line" class="cls-16" d="m195.5,31.5v95.5"/>
+  <path id="Line-2" data-name="Line" class="cls-16" d="m359.5,179.5v133"/>
+  <path id="Line-3" data-name="Line" class="cls-16" d="m735.5,172.5v95.5"/>
+  <text class="cls-13" transform="translate(77 76)"><tspan x="0" y="0">Analysis Stage</tspan></text>
+  <g>
+    <text class="cls-12" transform="translate(64.07 95)"><tspan x="0" y="0">Define </tspan><tspan class="cls-19" x="37.56" y="0">r</tspan><tspan x="41.34" y="0">equi</tspan><tspan class="cls-19" x="64.23" y="0">r</tspan><tspan class="cls-15" x="68.01" y="0">ements, </tspan></text>
+    <text class="cls-12" transform="translate(46.98 109)"><tspan x="0" y="0">expectations, and goals</tspan></text>
+  </g>
+  <rect id="Rectangle-2" data-name="Rectangle" class="cls-2" x="151" y="127" width="88" height="51" rx="4" ry="4"/>
+  <g id="Product-Design-and-A" class="cls-9">
+    <text class="cls-13" transform="translate(208 213)"><tspan x="0" y="0">Product Design</tspan></text>
+    <text class="cls-13" transform="translate(208 230)"><tspan x="0" y="0">and Architecture</tspan></text>
+  </g>
+  <g>
+    <text class="cls-12" transform="translate(208 253)"><tspan x="0" y="0">Define the Design</tspan></text>
+    <text class="cls-12" transform="translate(208 267)"><tspan x="0" y="0">&amp; A</tspan><tspan class="cls-19" x="18.67" y="0">r</tspan><tspan x="22.45" y="0">chitectu</tspan><tspan class="cls-19" x="65.35" y="0">r</tspan><tspan x="69.13" y="0">e of </tspan><tspan x="0" y="14.4">the softwa</tspan><tspan class="cls-19" x="55.99" y="14.4">r</tspan><tspan x="59.77" y="14.4">e </tspan></text>
+  </g>
+  <g id="Planning-and-Agile-D" class="cls-9">
+    <text class="cls-13" transform="translate(403 213)"><tspan x="0" y="0">Planning and </tspan></text>
+    <text class="cls-13" transform="translate(403 230)"><tspan x="0" y="0">Agile Development</tspan></text>
+  </g>
+  <g id="Maintenance-_-Suppor" data-name="Maintenance-&amp;amp;-Suppor" class="cls-9">
+    <text class="cls-13" transform="translate(770 105)"><tspan x="0" y="0">Maintenance &amp; </tspan></text>
+    <text class="cls-13" transform="translate(770 122)"><tspan x="0" y="0">Support</tspan></text>
+  </g>
+  <g id="Continuous-Improveme" class="cls-9">
+    <text class="cls-13" transform="translate(780 213)"><tspan x="0" y="0">Continuous </tspan></text>
+    <text class="cls-13" transform="translate(780 230)"><tspan x="0" y="0">Impr</tspan><tspan class="cls-7" x="25.89" y="0">o</tspan><tspan x="32.75" y="0">vement &amp; </tspan></text>
+    <text class="cls-13" transform="translate(780 247)"><tspan x="0" y="0">Inn</tspan><tspan class="cls-7" x="17.61" y="0">o</tspan><tspan class="cls-14" x="24.47" y="0">v</tspan><tspan x="30.46" y="0">ation</tspan></text>
+  </g>
+  <g id="Continuous-Integrati" class="cls-9">
+    <text class="cls-13" transform="translate(607 213)"><tspan x="0" y="0">Continuous </tspan></text>
+    <text class="cls-13" transform="translate(607 230)"><tspan x="0" y="0">Integration &amp; </tspan></text>
+    <text class="cls-13" transform="translate(607 247)"><tspan x="0" y="0">Deployment</tspan></text>
+  </g>
+  <g id="Plan" class="cls-9">
+    <text class="cls-10" transform="translate(482 137)"><tspan x="0" y="0">Plan</tspan></text>
+  </g>
+  <g id="Prioritize-features_" data-name="Prioritize-features," class="cls-9">
+    <text class="cls-12" transform="translate(403 253)"><tspan x="0" y="0">Prioritize featu</tspan><tspan class="cls-19" x="76.86" y="0">r</tspan><tspan x="80.64" y="0">es, </tspan></text>
+    <text class="cls-12" transform="translate(403 267)"><tspan x="0" y="0">tasks, and </tspan></text>
+    <text class="cls-12" transform="translate(403 281)"><tspan class="cls-8" x="0" y="0">r</tspan><tspan class="cls-20" x="3.78" y="0">equi</tspan><tspan class="cls-19" x="26.68" y="0">r</tspan><tspan x="30.46" y="0">ements </tspan></text>
+    <text class="cls-12" transform="translate(403 295)"><tspan x="0" y="0">Start Development in </tspan></text>
+    <text class="cls-12" transform="translate(403 309)"><tspan x="0" y="0">Sprints</tspan></text>
+  </g>
+  <g>
+    <text class="cls-11" transform="translate(161 150)"><tspan x="0" y="0">Proposal &amp; </tspan></text>
+    <text class="cls-11" transform="translate(161 165)"><tspan x="0" y="0">Estimation</tspan></text>
+  </g>
+  <rect id="Rectangle-3" data-name="Rectangle" class="cls-2" x="315" y="127" width="88" height="51" rx="4" ry="4"/>
+  <rect id="Rectangle-4" data-name="Rectangle" class="cls-2" x="695" y="138" width="79" height="34" rx="4" ry="4"/>
+  <g>
+    <text class="cls-11" transform="translate(325 150)"><tspan x="0" y="0">Product </tspan></text>
+    <text class="cls-11" transform="translate(325 165)"><tspan x="0" y="0">Prototype</tspan></text>
+  </g>
+  <text class="cls-11" transform="translate(713 159)"><tspan x="0" y="0">Release</tspan></text>
+  <path class="cls-6" d="m559.35,52.18l13.98-10.97c-31.85,2.08-57.17,27.97-58.27,60.01v4.45c.47,13.17,5.04,25.29,12.47,35.15h30.83c-13-6.63-22.1-19.81-22.93-35.15v-4.45c1.03-20.2,16.43-36.68,36.18-39.42l-12.26-9.62Z"/>
+  <path id="Fill-7" class="cls-1" d="m664.72,165.64h-63.25c9.06-3.48,17.32-8.94,24.21-16.11,1.32-1.37,2.57-2.79,3.76-4.26h35.28v-7.69l23.12,18.14-23.12,18.14v-8.22Z"/>
+  <g id="Group-13">
+    <g class="cls-17">
+      <path id="Fill-10" class="cls-1" d="m589.68,34.04l-23.12,18.14,23.12,18.14v-7.15c16.58,5.06,28.84,20.09,29.74,38.05l-.02,4.45c-.98,18.02-13.41,33.04-30.13,37.96-3.8,1.12-7.77,1.61-11.73,1.61l-49.25.04,13.32,10.45-13.32,9.86h51.93c32.4-1.44,58.37-27.52,59.55-59.92v-4.45c-.95-29.51-21.95-53.82-50.1-59.11v-8.07Z"/>
+    </g>
+  </g>
+  <circle id="Oval" class="cls-2" cx="48.5" cy="155.5" r="16.5"/>
+  <g id="Develop" class="cls-9">
+    <text class="cls-10" transform="translate(648 120)"><tspan x="0" y="0">Develop</tspan></text>
+  </g>
+  <g id="Test" class="cls-9">
+    <text class="cls-10" transform="translate(637 54)"><tspan class="cls-18" x="0" y="0">T</tspan><tspan x="4.87" y="0">est</tspan></text>
+  </g>
+  <g id="Deploy" class="cls-9">
+    <text class="cls-10" transform="translate(476 52)"><tspan x="0" y="0">Deploy</tspan></text>
+  </g>
+  <g id="Sprints" class="cls-9">
+    <text class="cls-10" transform="translate(551 106)"><tspan x="0" y="0">Sprints</tspan></text>
+  </g>
+  <g id="Review" class="cls-9">
+    <text class="cls-10" transform="translate(450 97)"><tspan x="0" y="0">Review</tspan></text>
+  </g>
+  <polygon id="Triangle" class="cls-3" points="871 155.5 848 171 848 140 871 155.5"/>
+</svg>

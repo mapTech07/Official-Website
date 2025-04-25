@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html::webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Universal margin for consistent spacing */
+.container {
+  @apply mx-auto px-4 md:px-8 lg:px-16 xl:px-32; /* Apply dynamic padding */
+  max-width: 100%; /* Ensure it takes up full width */
+}
+
+
+div {
+  scrollbar-width: none;
+}
+
+/* Change navigation button colors */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #154B9A !important; /* Custom color */
+}
+
+/* Customize pagination bullets */
+.swiper-pagination-bullet {
+  background: #154B9A !important; /* Change bullet color */
+}
+
+.swiper-pagination-bullet-active {
+  background: #154B9A !important; /* Active bullet color */
+}
+
+/* In your global CSS file (e.g., styles.css or global.css) */
+
+h2 {
+  font-size: 2rem; /* Adjust font size */
+  font-weight: 600; /* Adjust font weight */
+  line-height: 1.5; /* Adjust line height */
+  color: #333; /* Adjust text color */
+  margin-bottom: 1rem; /* Adjust margin below h2 */
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem; /* Adjust font size for larger screens */
+  }
+}
+h6 {
+  font-size: 1rem; /* Adjust font size */
+  font-weight: 300; /* Adjust font weight */
+  line-height: 1.5; /* Adjust line height */
+  color: #3C3C46; /* Adjust text color */
+  margin-bottom: 1rem; /* Adjust margin below h2 */
+}
+
+@media (min-width: 768px) {
+  h6 {
+    font-size: 1rem; /* Adjust font size for larger screens */
+  }
+}
+
+/* Counting Section */
+.counting-number {
+  display: inline-block;
+  animation: countUp 2s ease-out forwards; /* Adjust duration as needed */
+}
