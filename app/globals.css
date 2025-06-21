@@ -27,7 +27,6 @@ body {
   max-width: 100%; /* Ensure it takes up full width */
 }
 
-
 div {
   scrollbar-width: none;
 }
@@ -35,16 +34,16 @@ div {
 /* Change navigation button colors */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #154B9A !important; /* Custom color */
+  color: #154b9a !important; /* Custom color */
 }
 
 /* Customize pagination bullets */
 .swiper-pagination-bullet {
-  background: #154B9A !important; /* Change bullet color */
+  background: #154b9a !important; /* Change bullet color */
 }
 
 .swiper-pagination-bullet-active {
-  background: #154B9A !important; /* Active bullet color */
+  background: #154b9a !important; /* Active bullet color */
 }
 
 /* In your global CSS file (e.g., styles.css or global.css) */
@@ -66,7 +65,7 @@ h6 {
   font-size: 1rem; /* Adjust font size */
   font-weight: 300; /* Adjust font weight */
   line-height: 1.5; /* Adjust line height */
-  color: #3C3C46; /* Adjust text color */
+  color: #3c3c46; /* Adjust text color */
   margin-bottom: 1rem; /* Adjust margin below h2 */
 }
 

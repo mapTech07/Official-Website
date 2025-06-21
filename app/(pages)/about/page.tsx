@@ -1,38 +1,38 @@
 'use client';
 import React from 'react';
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from 'react-icons/fa';
 import Image from 'next/image';
 
 // Import images
 import aboutUs from '../../../public/3d-rendering-cartoon-like-colleagues-working-computer.jpg';
-import visionBanner from "../../../public/1000001429.webp";
+import visionBanner from '../../../public/1000001429.jpg';
 // import working__life from "../../../public/campaign-creators-gMsnXqILjp4-unsplash.jpg";
 
 const teamMembers = [
   {
-    name: "Anil Nhemhafuki",
-    role: "Founder & CEO",
-    image: "/team_img/Anil.png", // Ensure relative paths are correct
-    linkedin: "https://www.linkedin.com/in/anil-nhemhafuki-688583292/",
+    name: 'Anil Nhemhafuki',
+    role: 'Founder & CEO',
+    image: '/team_img/Anil.png', // Ensure relative paths are correct
+    linkedin: 'https://www.linkedin.com/in/anil-nhemhafuki-688583292/',
     contact: `Bhaktapur, Nepal <br/>
-              📧 <a href="mailto:ceo@maptechnepal.com" className="text-blue-600 hover:underline">ceo@maptechnepal.com</a>`
+              📧 <a href="mailto:ceo@maptechnepal.com" className="text-blue-600 hover:underline">ceo@maptechnepal.com</a>`,
   },
   {
-    name: "Pawan Bhattarai",
-    role: "Founder & CTO",
-    image: "/team_img/Pawan.png", // Ensure relative paths are correct
-    linkedin: "https://www.linkedin.com/in/pawanbhattarai/",
+    name: 'Pawan Bhattarai',
+    role: 'Founder & CTO',
+    image: '/team_img/Pawan.png', // Ensure relative paths are correct
+    linkedin: 'https://www.linkedin.com/in/pawanbhattarai/',
     contact: `Ilam, Nepal <br/>
-              📧 <a href="mailto:cto@maptechnepal.com" className="text-blue-600 hover:underline">cto@maptechnepal.com</a>`
+              📧 <a href="mailto:cto@maptechnepal.com" className="text-blue-600 hover:underline">cto@maptechnepal.com</a>`,
   },
   {
-    name: "Man Bahadur Roka",
-    role: "Business Consultant",
-    image: "/team_img/Man_Bahadur_Roka.jpg", // Ensure relative paths are correct
-    linkedin: "https://np.linkedin.com/in/manroka",
+    name: 'Man Bahadur Roka',
+    role: 'Business Consultant',
+    image: '/team_img/Man_Bahadur_Roka.jpg', // Ensure relative paths are correct
+    linkedin: 'https://np.linkedin.com/in/manroka',
     contact: `Kathmandu, Nepal <br/>
-              📧 <a href="mailto:mbroka@maptech.agency" className="text-blue-600 hover:underline">mbroka@maptech.agency</a>`
-  }
+              📧 <a href="mailto:mbroka@maptech.agency" className="text-blue-600 hover:underline">mbroka@maptech.agency</a>`,
+  },
 ];
 
 const Page = () => {
@@ -46,10 +46,18 @@ const Page = () => {
             <span className="absolute bottom-0 left-0 w-1/2 h-0.5 bg-black"></span>
           </h6>
           <h2 className="text-3xl font-semibold text-gray-800">
-            Empowering Solutions with <span className="text-[#144A9C]">Tech</span> & <span className="text-[#144A9C]">Innovation</span>
+            Empowering Solutions with{' '}
+            <span className="text-[#144A9C]">Tech</span> &{' '}
+            <span className="text-[#144A9C]">Innovation</span>
           </h2>
           <p className="text-base lg:text-lg text-gray-600 text-justify">
-            M.A.P. Tech is a premier software solutions provider in Nepal, delivering innovative and transformative technology services to businesses worldwide. We specialize in crafting cutting-edge digital solutions tailored to meet the unique needs of our clients. Our passion lies in reimagining possibilities and empowering organizations to achieve their full potential in an ever-evolving digital landscape.
+            M.A.P. Tech is a premier software solutions provider in Nepal,
+            delivering innovative and transformative technology services to
+            businesses worldwide. We specialize in crafting cutting-edge digital
+            solutions tailored to meet the unique needs of our clients. Our
+            passion lies in reimagining possibilities and empowering
+            organizations to achieve their full potential in an ever-evolving
+            digital landscape.
           </p>
         </div>
         <div className="lg:w-1/2">
@@ -80,10 +88,15 @@ const Page = () => {
             <span className="absolute bottom-0 left-0 w-1/2 h-0.5 bg-black"></span>
           </h6>
           <h2 className="text-3xl font-semibold text-gray-800">
-            Empowering Your Vision, <span className="text-[#144A9C]">Delivering Success</span>
+            Empowering Your Vision,{' '}
+            <span className="text-[#144A9C]">Delivering Success</span>
           </h2>
           <p className="text-base lg:text-lg text-gray-600 text-justify">
-            At M.A.P Tech, we envision a world where technology empowers businesses to transcend boundaries and achieve limitless possibilities. Through intelligent, scalable, and future-ready solutions, we simplify complexity, drive innovation, and build a smarter, connected digital ecosystem for enterprises globally.
+            At M.A.P Tech, we envision a world where technology empowers
+            businesses to transcend boundaries and achieve limitless
+            possibilities. Through intelligent, scalable, and future-ready
+            solutions, we simplify complexity, drive innovation, and build a
+            smarter, connected digital ecosystem for enterprises globally.
           </p>
         </div>
       </div>
@@ -97,9 +110,9 @@ const Page = () => {
               <span className="absolute bottom-0 left-0 w-1/2 h-0.5 bg-black"></span>
             </h6>
             <h2 className="text-3xl font-semibold text-gray-800">
-              Building something amazing <span className="text-[#144A9C]">since 2024</span>
+              Building something amazing{' '}
+              <span className="text-[#144A9C]">since 2024</span>
             </h2>
-
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -121,7 +134,10 @@ const Page = () => {
                   </svg>
                 </div>
                 <div className="flex items-baseline justify-center gap-2">
-                  <span className="text-4xl font-bold text-white" id="clientCount">
+                  <span
+                    className="text-4xl font-bold text-white"
+                    id="clientCount"
+                  >
                     10
                   </span>
                   <span className="text-blue-500 text-xl">+</span>
@@ -166,7 +182,10 @@ const Page = () => {
                   </svg>
                 </div>
                 <div className="flex items-baseline justify-center gap-2">
-                  <span className="text-4xl font-bold text-white" id="projectCount">
+                  <span
+                    className="text-4xl font-bold text-white"
+                    id="projectCount"
+                  >
                     5
                   </span>
                   <span className="text-green-500 text-xl">+</span>
@@ -211,7 +230,10 @@ const Page = () => {
                   </svg>
                 </div>
                 <div className="flex items-baseline justify-center gap-2">
-                  <span className="text-4xl font-bold text-white" id="teamCount">
+                  <span
+                    className="text-4xl font-bold text-white"
+                    id="teamCount"
+                  >
                     10
                   </span>
 
@@ -257,7 +279,10 @@ const Page = () => {
                   </svg>
                 </div>
                 <div className="flex items-baseline justify-center gap-2">
-                  <span className="text-4xl font-bold text-white" id="hoursCount">
+                  <span
+                    className="text-4xl font-bold text-white"
+                    id="hoursCount"
+                  >
                     500
                   </span>
                   <span className="text-orange-500 text-xl">+</span>
@@ -396,7 +421,9 @@ const Page = () => {
                 height={128}
                 className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
               />
-              <h3 className="text-xl font-semibold text-gray-800">{member.name}</h3>
+              <h3 className="text-xl font-semibold text-gray-800">
+                {member.name}
+              </h3>
               <p className="text-gray-600">{member.role}</p>
               <div
                 className="text-sm text-gray-500 mt-2"

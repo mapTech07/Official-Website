@@ -13,7 +13,7 @@ export default {
         foreground: 'var(--foreground)',
       },
       fontFamily: {
-        custom: ['Poppins', 'sans-serif'],  // Using Poppins as the custom font
+        custom: ['Poppins', 'sans-serif'], // Using Poppins as the custom font
       },
       keyframes: {
         marquee: {
@@ -21,7 +21,7 @@ export default {
         },
       },
       animation: {
-        marquee: "marquee 30s linear infinite",
+        marquee: 'marquee 30s linear infinite',
       },
     },
   },

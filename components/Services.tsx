@@ -1,202 +1,195 @@
 'use client';
-/*
-import packages from react
-*/
-import React, { } from 'react';
+import React from 'react';
+import { useRouter } from 'next/navigation'; // App Router navigation
 
-import webdev from '../public/services_img/website.jpg';
-import application from '../public/services_img/ios.jpg';
-import ai_chat from '../public/services_img/chatbot.jpg';
-import software from '../public/services_img/software-dev.jpg';
-import ui from '../public/services_img/logo1.jpg';
-import video from '../public/services_img/video-edditing2.jpg';
-import seo from '../public/services_img/7155205.jpg';
-import domain from '../public/services_img/domain.jpg';
-import hosting from '../public/services_img/digitalpromotion3.jpg';
-
-import Image from 'next/image';
-
-/*
-import array of service from resources
-*/
-const arr = [
+// Simplified service data with extended SEO-optimized descriptions
+const services = [
   {
-    id: '01',
+    id: 'web-development',
     title: 'Web Development',
-    sections: [
-      'MERN Framework',
-      'Laravel Framework',
-      'Django Framework',
-      'WordPress Framework',
-    ],
-    desc: 'We craft dynamic, responsive websites for seamless user experiences. Whether you need a sleek design or a high-performance site, we ensure your website stands out and drives results.',
-    img: webdev,
+    icon: '🌐',
+    description:
+      'We develop fast, responsive websites that are tailor-made to suit your business requirements, ensuring users have a perfect experience and a great online presence.',
+    color: 'from-blue-500 to-cyan-500',
+    bgColor: 'bg-blue-50',
+    textColor: 'text-blue-600',
+    borderColor: 'border-blue-200',
   },
   {
-    id: '02',
+    id: 'app-development',
     title: 'App Development',
-    sections: [
-      'Android Development',
-      'IOS Development',
-      'Hybrid Platform',
-    ],
-    desc: 'We provide high-quality cross-platform app development, ensuring intuitive, user-centric solutions that align with your brand for a seamless experience across all devices.',
-    img: application,
+    icon: '📱',
+    description:
+      'Our mobile application solutions deliver high performance on both Android and iOS, working effortlessly with an intuitive UI alongside excellent functionality.',
+    color: 'from-purple-500 to-pink-500',
+    bgColor: 'bg-purple-50',
+    textColor: 'text-purple-600',
+    borderColor: 'border-purple-200',
   },
   {
-    id: '03',
-    title: 'AI Chatbot',
-    sections: [
-      'Natural Language Processing (NLP)',
-      'Live Chat Handover',
-    ],
-    desc: 'Our intelligent chatbots are powered by cutting-edge AI technologies, offering personalized, real-time assistance across various platforms.',
-    img: ai_chat,
-  },
-
-  {
-    id: '04',
+    id: 'software-development',
     title: 'Software Development',
-    sections: [
-      'Cross-Platform Compatibility',
-      'Scalability',
-      'Community Support',
-    ],
-    desc: 'Our software development services focus on delivering custom, scalable solutions using the latest technologies. We ensure high-quality code, seamless user experiences, and robust security throughout the development lifecycle.',
-    img: software,
+    icon: '💻',
+    description:
+      'From conceptualization to realization, we develop secure, scalable systems that will optimally facilitate business operations to effect growth.',
+    color: 'from-green-500 to-emerald-500',
+    bgColor: 'bg-green-50',
+    textColor: 'text-green-600',
+    borderColor: 'border-green-200',
   },
   {
-    id: '05',
-    title: 'Graphic and UI/UX Design',
-    sections: [
-      'Logo Design',
-      'Adobe Creative Suite',
-      'Collateral Design',
-      'Prototyping Figma Design',
-    ],
-    desc: 'We create intuitive, visually appealing designs to boost user engagement and satisfaction. Collaborating with you, we ensure designs align with your brand for a seamless experience across all platforms.',
-    img: ui,
+    id: 'ui-ux-design',
+    title: 'UI/UX Design',
+    icon: '🎨',
+    description:
+      'We humanize user-driven interfaces and enlightening digital experiences in a way that fosters participation across all platforms by increasing usability.',
+    color: 'from-orange-500 to-red-500',
+    bgColor: 'bg-orange-50',
+    textColor: 'text-orange-600',
+    borderColor: 'border-orange-200',
   },
   {
-    id: '06',
-    title: 'Video Editing',
-    sections: [
-      'Digital Promotion',
-      'Professional Editing',
-      'Audio Optimization',
-
-      'Fast Turnaround',
-    ],
-    desc: 'Bring your vision to life with professional editing, seamless transitions, and high-quality visuals. We enhance your content with precise cuts, color grading, and audio optimization to create engaging and impactful videos.',
-    img: video,
+    id: 'graphics-design',
+    title: 'Graphics Design',
+    icon: '🖼️',
+    description:
+      'Enhance your brand identity with visually compelling graphics, logos, and marketing materials that leave a lasting impression.',
+    color: 'from-pink-500 to-rose-500',
+    bgColor: 'bg-pink-50',
+    textColor: 'text-pink-600',
+    borderColor: 'border-pink-200',
   },
   {
-    id: '07',
+    id: 'digital-marketing',
     title: 'Digital Marketing',
-    sections: [
-      'Search Engine Optimization',
-      'Content Strategy',
-      'Organic Research',
-      'Analytics and Insights',
-    ],
-    desc: 'We build and execute social media strategies to amplify your brand and foster engagement, ensuring your brand’s voice resonates consistently across all major platforms.',
-    img: seo,
+    icon: '📈',
+    description:
+      'Boost your online presence with expert SEO, SMM, content writing, and targeted campaigns to drive traffic and grow your brand.',
+    color: 'from-indigo-500 to-blue-500',
+    bgColor: 'bg-indigo-50',
+    textColor: 'text-indigo-600',
+    borderColor: 'border-indigo-200',
   },
   {
-    id: '08',
+    id: 'domain-registration',
     title: 'Domain Registration',
-    sections: [
-      'Email',
-      'SSL',
-      'Transfer Domain',
-    ],
-    desc: 'We offers secure domain registration with SSL, email, and hosting solutions to enhance your online presence.',
-    img: domain,
+    icon: '🌍',
+    description:
+      "Secure your brand's online presence with reliable domain registration, including SSL certificates and professional email setup.",
+    color: 'from-teal-500 to-cyan-500',
+    bgColor: 'bg-teal-50',
+    textColor: 'text-teal-600',
+    borderColor: 'border-teal-200',
   },
   {
-    id: '09',
-    title: 'Website Hosting',
-    sections: [
-      'Nginix',
-      'Virtual Private Server',
-      'Elastic Cloud Compute',
-    ],
-    desc: 'We offer reliable, secure website hosting solutions for all business needs, ensuring smooth and efficient performance at all times.',
-    img: hosting,
+    id: 'web-vps-hosting',
+    title: 'Web/VPS Hosting',
+    icon: '🗄️',
+    description:
+      'Reliable and scalable web and VPS hosting solutions with top-tier uptime, security, and 24/7 support to keep your site online and fast.',
+    color: 'from-slate-500 to-gray-500',
+    bgColor: 'bg-slate-50',
+    textColor: 'text-slate-600',
+    borderColor: 'border-slate-200',
   },
-
 ];
 
-/* execute service component code*/
 const Service = () => {
+  const router = useRouter();
 
   return (
+    <section
+      className="py-16 px-4 bg-gradient-to-br from-gray-50 via-white to-blue-50"
+      role="main"
+    >
+      <header className="max-w-6xl mx-auto text-center mb-8">
+        <h1 className="text-3xl md:text-4xl font-bold mb-3">Our Services</h1>
+        <p className="text-gray-600 max-w-2xl mx-auto">
+          Transform your digital presence with our comprehensive professional
+          services tailored to elevate your business.
+        </p>
+      </header>
 
-    <section className='flex flex-col items-center px-4 py-2 w-full'>
-      <div className="relative w-[80vw] py-2 h-full mb-10 md:mt-16 flex flex-col lg:flex-row items-start justify-center gap-10 lg:gap-20">
-
-        {/* Service Section */}
-        <div className="w-full lg:w-[100%] px-6 lg:px-10 text-center">
-
-          <h2 className="text-3xl font-semibold text-gray-800">What We Offer</h2>
-
-          <div className="flex justify-center w-full">
-
-            <article className="w-[80vw] lg:w-[50vw] text-center text-base text-gray-900">
-              We provide innovative, tailored solutions that drive business growth and enhance digital experiences across various industries
-            </article>
-          </div>
-
-        </div>
-      </div>
-
-
-      <div className=" lg:mx-14 w-[80vw] lg:w-[70vw]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8  mb-4  px-10">
-          {arr.map(({ title, sections, desc, img }, index) => (
-            <div
-              key={index}
-              className="p-6 bg-white shadow-lg rounded-xl border border-gray-300 cursor-pointer transition-all duration-300  hover:shadow-2xl"
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 mb-8">
+          {services.map((service) => (
+            <article
+              key={service.id}
+              className={`group relative bg-white rounded-xl pt-4 pr-4 pb-4 pl-6 shadow-md hover:shadow-lg transition-all duration-300 border ${service.borderColor} hover:-translate-y-1 cursor-pointer overflow-hidden`}
+              itemScope
+              itemType="https://schema.org/Service"
             >
-              <div className="flex items-center gap-3 mb-4">
-                {/* <h4 className="text-2xl font-bold opacity-60">{id}</h4> */}
-                <h3 className="font-semibold">{title}</h3>
-              </div>
+              <div
+                className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
+              ></div>
 
-              {/* Image container with hover effect */}
-              <div className="relative w-full h-40 overflow-hidden rounded-md group">
-                <Image
-                  src={img}
-                  alt={title}
-                  className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
-                />
-
-                {/* Hidden Description (Reveals on hover) */}
-                <div className="absolute bottom-0 left-0 w-full h-full bg-[#88A8CE] bg-opacity-90 text-white flex flex-col justify-center items-center text-center p-2 sm:p-4 opacity-0 transition-all duration-500 transform translate-y-full group-hover:translate-y-0 group-hover:opacity-100 group-focus:translate-y-0 group-focus:opacity-100">
-                  <p className="text-[10px] sm:text-xs md:text-sm lg:text-base whitespace-normal overflow-hidden line-clamp-5">
-                    {desc}
-                  </p>
+              <div className="relative z-10">
+                <div className="flex items-center gap-2 mb-3">
+                  <div
+                    className={`inline-flex items-center justify-center w-10 h-10 ${service.bgColor} rounded-lg group-hover:scale-105 transition-transform duration-300`}
+                  >
+                    <span className="text-lg">{service.icon}</span>
+                  </div>
+                  <h2
+                    className="text-2xl font-bold text-gray-900 leading-tight"
+                    itemProp="name"
+                  >
+                    {service.title}
+                  </h2>
                 </div>
 
+                <p
+                  className="text-gray-600 mb-3 text-0.2xl leading-relaxed text-justify"
+                  itemProp="description"
+                >
+                  {service.description}
+                </p>
 
-
-
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <button
+                    className={`w-full ${service.textColor} text-xs font-semibold py-2 rounded-lg hover:${service.bgColor} transition-colors duration-200 flex items-center justify-center gap-1`}
+                    aria-label={`Learn more about ${service.title}`}
+                  >
+                    {/* <span>Learn More</span>
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg> */}
+                  </button>
+                </div>
               </div>
-
-              {/* Services list (Always visible) */}
-              <div className="mt-3 text-sm flex flex-wrap gap-2">
-                {sections.map((element, i) => (
-                  <span key={i} className="bg-gray-200 px-2 py-1 rounded-full text-xs inline-block overflow-hidden whitespace-normal line-clamp-2">
-                    {element}
-                  </span>
-                ))}
-              </div>
-            </div>
+            </article>
           ))}
+        </div>
+
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/20">
+            <h2 className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-blue-800 bg-clip-text text-transparent mb-2">
+              Ready to Get Started?
+            </h2>
+
+            <p className="text-gray-600 mb-4 text-1.2xl">
+              Let&apos;s transform your ideas into reality with our tailored
+              digital solutions.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <button
+                onClick={() => router.push('/contact')}
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2.5 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-md font-bold"
+              >
+                Start Project
+              </button>
+              <button
+                onClick={() => router.push('/portfolio')}
+                className="border border-gray-300 text-gray-700 px-4 py-2.5 rounded-lg font-medium hover:border-blue-500 hover:text-blue-600 transition-all duration-300 font-bold"
+              >
+                View Portfolio
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
   );
 };
 

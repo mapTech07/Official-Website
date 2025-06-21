@@ -2,10 +2,10 @@
 
 import React from 'react';
 import Image from 'next/image';
-import batasmaw from '../public/project_img/Batas.png';
-import andasuppliers from '../public/project_img/AndaSupplier.png';
-import rb_hair from '../public/project_img/RBHair.png';
-import kailashhimalaya from '../public/project_img/Kailash_himalaya.png';
+import batasmaw from '../public/project_img/Batas.webp';
+import andasuppliers from '../public/project_img/AndaSupplier.webp';
+import rb_hair from '../public/project_img/RBHair.webp';
+import kailashhimalaya from '../public/project_img/Kailash_himalaya.webp';
 import Link from 'next/link';
 const projects = [
   {
@@ -27,27 +27,28 @@ const projects = [
     title: 'RB Hair & Beauty Lounge',
     category: 'Web Development',
     img: rb_hair,
-  }
+  },
 ];
 
 const Project = () => {
   return (
     <section className="bg-gradient-to-b from-blue-50 to-white py-16">
-      <div className="container mx-auto px-4 max-w-7xl">
+      <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-          Honoring Our Clients&apos; Achievements
-        </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Honoring Our Client&apos;s Achievements
+          </h2>
           <div className="mx-auto max-w-2xl">
             <p className="text-lg text-gray-700">
-              We build strong partnerships with our clients, delivering innovative solutions and driving success through collaboration.
+              We build strong partnerships with our clients, delivering
+              innovative solutions and driving success through collaboration.
             </p>
           </div>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-4 w-full max-w-6xl mx-auto px-2">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -72,16 +73,9 @@ const Project = () => {
                   </span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold text-gray-800">{project.title}</h3>
-                  <div className="p-2 bg-gray-100 rounded-full hover:bg-blue-100 transition-colors duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-600" viewBox="0 0 24 24">
-                      <g>
-                        <path d="M12 24a12 12 0 1 1 12-12 12.013 12.013 0 0 1-12 12zm0-22a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2z" />
-                        <path d="m13.707 16.707-1.414-1.414L15.586 12l-3.293-3.293 1.414-1.414L18.414 12l-4.707 4.707z" />
-                        <path d="M6 11h11v2H6z" />
-                      </g>
-                    </svg>
-                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    {project.title}
+                  </h3>
                 </div>
               </div>
             </div>

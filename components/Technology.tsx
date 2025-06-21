@@ -1,55 +1,116 @@
 import React from 'react';
+import Image from 'next/image';
+
 const techs = [
-  { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/mongodb.svg' },
-  { name: 'Express.js', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/express.svg' },
-  { name: 'React', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/react.svg' },
-  { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/nodedotjs.svg' },
-  { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/javascript.svg' },
-  { name: 'WordPress', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/wordpress.svg' },
+  {
+    name: 'React',
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/react.svg',
+  },
+  {
+    name: 'JavaScript',
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/javascript.svg',
+  },
+  {
+    name: 'Flutter',
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/flutter.svg',
+  },
 
-  { name: 'Python', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/python.svg' },
-  { name: 'Java', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/java.svg' },
-  { name: 'Docker', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/docker.svg' },
-  { name: 'Kubernetes', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/kubernetes.svg' },
+  {
+    name: 'Node.js',
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/nodedotjs.svg',
+  },
+  {
+    name: 'Express.js',
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/express.svg',
+  },
+  {
+    name: 'Laravel',
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/laravel.svg',
+  },
+  {
+    name: 'Python',
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/python.svg',
+  },
+  {
+    name: 'Java',
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/java.svg',
+  },
 
-  { name: 'Flutter', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/flutter.svg' },
-  { name: 'Laravel', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/laravel.svg' },
-  { name: 'Figma', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/figma.svg' },
-  { name: 'Bitbucket', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/bitbucket.svg' },
+  {
+    name: 'MongoDB',
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/mongodb.svg',
+  },
+
+  {
+    name: 'Docker',
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/docker.svg',
+  },
+  {
+    name: 'Kubernetes',
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/kubernetes.svg',
+  },
+  {
+    name: 'Bitbucket',
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/bitbucket.svg',
+  },
+
+  {
+    name: 'Figma',
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/figma.svg',
+  },
+  {
+    name: 'WordPress',
+    icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/wordpress.svg',
+  },
 ];
 
 const Technology = () => {
   return (
-    <section className="items-center bg-gradient-to-tl from-indigo-100 via-blue-100 to-white py-16">
-      <div className="w-[80vw] mx-auto">
+    <section className="bg-gradient-to-tl from-indigo-100 via-blue-100 to-white py-16">
+      <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-8">
-          <h2 className="text-4xl font-bold text-gray-800">Technologies We Use</h2>
-          <p className="text-gray-600 mt-2">Our curated stack of modern tools and technologies</p>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+            Technologies We Use
+          </h2>
+          <p className="mt-2 text-gray-600 text-base">
+            Our curated stack of modern tools and technologies
+          </p>
         </div>
 
-        {/* Tech Stack Grid */}
-        <div className="w-[80vw] lg:mx-14 px-4 flex flex-col md:flex-row gap-8">
-          {/* Left Column */}
+        {/* Content */}
+        <div className="flex flex-col md:flex-row gap-8 items-start">
+          {/* Icons Grid */}
           <div className="w-full md:w-2/3">
-            <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
+            <div className="grid grid-cols-4 sm:grid-cols-4 gap-4">
               {techs.map((tech, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-center w-full h-16 bg-white rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105"
+                  className="flex items-center justify-center p-4 bg-white rounded-xl shadow hover:shadow-md transition transform hover:scale-105"
                   title={tech.name}
                 >
-                  <img src={tech.icon} alt={tech.name} className="w-8 h-8" />
+                  <Image
+                    src={tech.icon}
+                    alt={tech.name}
+                    width={32}
+                    height={32}
+                    className="w-8 h-8"
+                    unoptimized
+                  />
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Right Column */}
-          <div className="w-full md:w-1/3 p-4 rounded-lg">
-            <h2 className="text-3xl font-semibold text-gray-800 mb-2">Our Technology Stack</h2>
-            <p className="text-base text-gray-700 text-justify mb-4">
-            We leverage the very best in technology to foster the development of highly secure applications able to scale and meet unique business needs. Our tech stack ranges from modern front-end frameworks like React and Next.js to strong back-end technologies like Node.js, Python, and Java. 
+          {/* Description */}
+          <div className="w-full md:w-1/3">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+              Our Technology Stack
+            </h3>
+            <p className="text-gray-700 text-base text-justify">
+              We utilize cutting-edge tools and frameworks for both frontend and
+              backend development, ensuring scalable, secure, and
+              high-performance applications across various platforms.
             </p>
           </div>
         </div>

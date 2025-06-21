@@ -40,8 +40,12 @@ const FAQ = () => {
     <section className="py-10 px-6 md:px-16 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-semibold text-gray-800">Frequently Asked Questions</h2>
-          <p className="text-center text-base text-gray-900">Here are some quick answers to common questions you may have.</p>
+          <h2 className="text-3xl font-semibold text-gray-800">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-center text-base text-gray-900">
+            Here are some quick answers to common questions you may have.
+          </p>
         </div>
 
         <div className="after:content-[''] after:table after:clear-both">
@@ -56,9 +60,11 @@ const FAQ = () => {
                 <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
                 <button
                   className="text-gray-500 text-lg focus:outline-none"
-                  aria-label={activeId === id ? 'Collapse answer' : 'Expand answer'}
+                  aria-label={
+                    activeId === id ? 'Collapse answer' : 'Expand answer'
+                  }
                 >
-                  {activeId === id ? '-' : '+'} 
+                  {activeId === id ? '-' : '+'}
                 </button>
               </div>
               {/* Answer */}
