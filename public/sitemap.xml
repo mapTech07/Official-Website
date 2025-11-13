@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://maptechnepal.com/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://maptechnepal.com/about</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://maptechnepal.com/services</loc>
+    <priority>0.80</priority>
+  </url>
+    <url>
+    <loc>https://maptechnepal.com/product</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://maptechnepal.com/portfolio</loc>
+    <priority>0.80</priority>
+  </url>
+    <url>
+    <loc>https://maptechnepal.com/insights</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://maptechnepal.com/contact</loc>
+    <priority>0.64</priority>
+  </url>
+    <url>
+    <loc>https://maptechnepal.com/DemoRequest</loc>
+    <priority>0.64</priority>
+  </url>
+</urlset>

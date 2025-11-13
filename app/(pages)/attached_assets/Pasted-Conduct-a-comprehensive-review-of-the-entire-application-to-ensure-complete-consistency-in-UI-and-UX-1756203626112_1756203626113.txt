@@ -1,0 +1,36 @@
+Conduct a comprehensive review of the entire application to ensure complete consistency in UI and UX across all pages, screens, and components.
+
+Scope of Review:
+
+Visual Design Consistency 
+Verify uniform use of:
+Colors (primary, secondary, error, success, etc.) — use defined design tokens.
+Typography (h1 to h6, <p>, links) — consistent font family, size, weight, and line height.
+Spacing (margins, padding) — follow a standard spacing scale (e.g., 4px, 8px, 16px, 24px).
+Shadows, borders, and radius — consistent button corners, card styles, and elevation.
+
+Component Uniformity 
+Ensure reusable components (buttons, inputs, dropdowns, modals, cards, loaders) look and behave the same everywhere.
+Check that button styles (primary, secondary, danger) are used correctly and consistently.
+Confirm form fields have uniform labels, placeholders, error states, and validation styles.
+
+Layout & Grid Structure 
+All pages should follow the same grid system and alignment principles.
+Headers, footers, sidebars, and navigation bars should be consistent in structure and behavior.
+Maintain consistent content width and container padding across breakpoints.
+
+User Interaction & Feedback 
+Ensure consistent hover, focus, active, and disabled states for interactive elements.
+Standardize loading indicators, success messages, error toasts, and notification styles.
+Use the same icons (from a single icon set) with consistent size and color usage.
+
+Responsive Behavior 
+Verify that all pages adapt smoothly to mobile, tablet, and desktop views.
+Navigation, forms, and data tables should remain usable and aligned on all devices.
+
+Accessibility & Usability 
+Maintain consistent focus indicators and keyboard navigation.
+Use ARIA labels and semantic HTML uniformly.
+Ensure sufficient color contrast and readable text sizes.
+
+Goal: Deliver a cohesive, professional, and intuitive user experience where every page feels like part of the same product — no matter who built it or when.
